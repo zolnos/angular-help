@@ -1,0 +1,9 @@
+  {
+    "cars": [
+{"name":"polonez", "price": "34.23"},
+{"name": "alfa romeo", "price": "23.22"},
+      {"name": "alfa romeo", "price": "323.22"},
+      {"name": "alfa romeo 2", "price": "4223.22"},
+      {"name": "alfa romeo 3", "price": "63.22"}
+]
+}

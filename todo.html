@@ -1,0 +1,33 @@
+<div ng-init="init()">
+
+
+    {{ fcontroller.sayHello() }}
+    <hr />
+    Zaznaczono {{ fcontroller.count() }} na {{fcontroller.todoList.length }}
+
+    <br />
+
+
+    <ul class="unstyled">
+
+        <li ng-repeat="element in fcontroller.todoList">
+            <span>{{ element.name }}</span>
+            <input type="checkbox" ng-model="element.done">
+        </li>
+
+    </ul>
+
+
+    <a href="" ng-click="fcontroller.archive()">oczyść</a>
+
+    <form ng-submit="fcontroller.add()">
+
+        <input ng-model="fcontroller.textToAdd">
+
+        <input type="submit">
+    </form>
+
+
+</div>
+
+<a ng-href="#/">Start</a>

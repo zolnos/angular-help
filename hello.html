@@ -1,0 +1,18 @@
+<div >
+
+    <h1>{{ hc.text }}</h1>
+
+    <ul>
+        <li ng-repeat="l in hc.lorem | filter:nf | orderBy:'name'">{{ l.name }}: {{l.price | number:1}} </li>
+
+    </ul>
+    <a ng-href="#/todo">todo</a>
+
+    <br />
+    <input type="text" placeholder="wpisz filter na nazwę" ng-model="nf" />
+
+
+    <hr />
+    Randomex: {{ randomex }}
+
+</div>
