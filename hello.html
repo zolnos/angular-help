@@ -1,6 +1,6 @@
 <div >
 
-    <h1>{{ hc.text }}</h1>
+    <h1>{{ text }}</h1>
 
     <ul>
         <li ng-repeat="l in hc.lorem | filter:nf | orderBy:'name'">{{ l.name }}: {{l.price | number:1}} </li>
@@ -15,4 +15,11 @@
     <hr />
     Randomex: {{ randomex }}
 
+    <hr />
+    Person {{person}}
+
 </div>
+
+<hr />
+
+<div my-image after-title="{{afterTitle}}" personus="person" change="changeHello()"></div>

@@ -4,7 +4,7 @@
 
 
 
-angular.module('tryApp', ['route', 'controllers', 'services', 'filters'])
+angular.module('tryApp', ['route', 'controllers', 'services', 'filters', 'tryApp.directives'])
 
 
 

@@ -10,7 +10,7 @@ angular.module('controllers', [])
 
         function(lorem, $scope, shc, $rootScope, getme) {
 
-        this.text = 'Witaj u mnie!';
+        $scope.text = 'Witaj u mnie!';
         this.lorem = lorem.data.cars;
 
         $scope.ff = function(input) {
@@ -32,7 +32,7 @@ angular.module('controllers', [])
                 })
             }
 
-    $scope.test = 'testuś';
+    $scope.afterTitle = 'testuś';
 
             //console.info(lorem);
 
@@ -40,6 +40,14 @@ angular.module('controllers', [])
                console.info('Jestem zgetowany: ', data);
             });
 
+
+            $scope.changeHello = function() {
+                $scope.$apply(function() {
+                    $scope.text = 'Zmieniłem, jesteś łosiem!';
+                });
+
+                console.info('hh');
+            }
 
 
     }])
