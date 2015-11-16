@@ -32,7 +32,7 @@ angular.module('controllers', [])
                 })
             }
 
-    $scope.afterTitle = 'testuś';
+            $scope.afterTitle = 'testuś';
 
             //console.info(lorem);
 
@@ -41,12 +41,13 @@ angular.module('controllers', [])
             });
 
 
-            $scope.changeHello = function() {
-                $scope.$apply(function() {
-                    $scope.text = 'Zmieniłem, jesteś łosiem!';
-                });
+            $scope.changeHello = function(name) {
 
                 console.info('hh');
+
+                $scope.text = 'Zmieniłem, jesteś łosiem: ' + name;
+
+
             }
 
 
